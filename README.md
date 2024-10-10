@@ -13,7 +13,7 @@ Các chức năng chính:
   
 + Hướng dẫn đánh thức tke speaker ai: bạn gọi: Chào chát bốt --> bạn ra câu lệnh cho speaker thức hiện.
 - Nghe nhạc trên Youtube: Bạn gọi: Chào chát bốt --> Mở nhạc + tên bài hát bạn muốn nghe
-- Nghe nhạc trên Zingmp3: Gọi: Chào chát bốt --> Mở nhạc trên zing + tên tên bài hát bạn muốn nghe
+- Nghe nhạc trên Zingmp3: Gọi: Chào chát bốt --> Mở nhạc trên zing + tên bài hát bạn muốn nghe (Ghi chú nên chọn chủ đề hay tên ca sĩ để nghe trên zingmp3. ví dụ: Chào chát bốt --> Mở nhạc trên zing disco . Lúc này hệ thống tìm ra các bài có thể loại disco và nhiếu ca sĩ. Loa sẽ phát liên tục. khi muốn chuyển bài chỉ cần bấm nút dấu Play trên loa. Muốn dừng không phát nữa nhấn nút dấu Play trên loa và giữ trong 5-10 S là kết thúc)
 - Nghe Radio: Chào chát bốt --> mở đài (hay radio) vov1 
                            --> mở đài (hay radio) vov2
                            --> mở đài (hay radio) vov3
