@@ -23,7 +23,7 @@ Các chức năng chính:
                                             mở đài voh
 - Điều khiển thiết bị câu lệnh : Mở/tắt,Bật/Đóng/Ngắt..
 - Kiểm tra trạng thái thiết bị: Chào chát bốt --> Kiểm tra trạng thái + tên thiết bị...
-Hướng dẫn cài đặt nâng cao:
++ Hướng dẫn cài đặt nâng cao:
 - Sau khi biết được địa chỉ IP kết nối Wifi của Raspi -> vào WinSCP trên máy tính (Nếu chưa cài thì vào địa chỉ: https://winscp.net/eng/download.php)  Password truy cập Raspberry:
 - Name: pi
 - pass: raspberry
@@ -31,4 +31,5 @@ Kết nối Rapberry để thấy được Folder: tke_speaker_ai -> Mở -> b�
 - File : api_key_tke.json là file chứa các api key cho hệ thống
 - clients_info.json -> cấu hình các subscribe/publish MQTT Broker client 
 - setup_wakeup.json -> thay đổi các file picovoice cho lệnh đánh thức tke speaker ai
-- vvvvvvvvvvv
+- Download mã nguồn cho tke_speaker_ai: git clone https://github.com/tkechatbot/tke_speaker_ai.git
+  
