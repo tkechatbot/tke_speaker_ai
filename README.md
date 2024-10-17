@@ -1,3 +1,6 @@
+Cập nhật chương trình: 
+- Cài thêm thư viện:  sudo python3 -m pip install youtube-search-python
+
 Dự án cá nhân tke speaker ai 
 Hoạt động online
 Các chức năng chính:
