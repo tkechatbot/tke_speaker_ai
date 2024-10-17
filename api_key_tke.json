@@ -4,7 +4,7 @@
     "gemini": "",
     "api_chatgpt": "true",
     "chatgpt": "",
-    "ip_home_assitant": "192.168.0.100:8123",
+    "ip_home_assitant": "http://192.168.0.100:8123",
     "active_home": "false",
     "key_home_assistant": "",
     "key_line_notify": ""
