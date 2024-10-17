@@ -1,4 +1,4 @@
-Cập nhật chương trình: 
+Cập nhật chương trình: 30-9-2024-01 
 - Cài thêm thư viện:  sudo python3 -m pip install youtube-search-python
 
 Dự án cá nhân tke speaker ai 
