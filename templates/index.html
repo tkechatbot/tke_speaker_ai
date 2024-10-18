@@ -123,6 +123,27 @@
             // Gửi dữ liệu
             xhr.send(encodedData);
         }
+
+		function resetSystem() {
+			if (confirm('Bạn có chắc chắn muốn reset hệ thống không?')) {
+				// Gửi yêu cầu AJAX để khởi động lại hệ thống
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', '/update_parameter/reset', true);
+				xhr.setRequestHeader('Content-Type', 'application/json');
+
+				xhr.onreadystatechange = function () {
+					if (xhr.readyState == 4 && xhr.status == 200) {
+						alert('Hệ thống đang khởi động lại!');
+					} else if (xhr.readyState == 4) {
+						alert('Có lỗi xảy ra, vui lòng thử lại.');
+					}
+				};
+
+				// Gửi yêu cầu với dữ liệu JSON
+				xhr.send(JSON.stringify({reset: true}));
+			}
+		}
+
     </script>
 </head>
 <body style="display:none;">
@@ -233,14 +254,13 @@
         </form>
     </div>
 	
-	
 	<!-- Form cho nút reset -->
-	<div class="form-container">
-		<form action="{{ url_for('reset_parameters') }}" method="POST">
-			<button type="submit">Reset hệ thống</button>
-		</form>
-	</div>
+    <div class="form-container">
+        <form id="resetForm" action="{{ url_for('update_parameter', param='reset') }}" method="POST">
+            <button type="button" onclick="resetSystem()">Reset hệ thống</button>
+        </form>
+    </div>
 	
-
+	
 </body>
 </html>
