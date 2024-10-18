@@ -28,16 +28,14 @@ def index():
 @app.route('/update_parameter/<param>', methods=['POST'])
 def update_parameter(param):
     """Cập nhật các tham số hoặc khởi động lại hệ thống."""
+    
+    if param == 'reset':
+        data = request.json
+        if data and data.get('reset'):
+            subprocess.Popen(['sudo', 'reboot'], shell=False)
+            
     parameters = read_parameters()
          
-    data = request.get_json()
-    if data and data.get('reset') == True:
-        # Chạy lệnh reboot
-        subprocess.Popen(['sudo', 'reboot'], shell=False)
-        return jsonify({"status": "rebooting"}), 200
-    return jsonify({"status": "failed"}), 400     
-         
-            
     # Cập nhật giá trị của tham số
     new_value = request.form.get(param)
     if new_value:
