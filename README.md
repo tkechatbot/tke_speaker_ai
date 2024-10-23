@@ -1,12 +1,9 @@
-Cập nhật chương trình: 30-9-2024-01 
-- Cài thêm thư viện:  sudo python3 -m pip install youtube-search-python
-
 Dự án cá nhân tke speaker ai 
 Hoạt động online
 Các chức năng chính:
 - Nghe nhạc online trên : Youtube, zingmp3
 - Kết nối Home Assistant --> Điều khiển thiết bị, sensor
-- Mosquitto MQTT Broker --> Điều khiển thiết bị, sensor , Alarm LINE Notify
+- Mosquitto MQTT Broker --> Điều khiển thiết bị, sensor , RF Alarm trên LINE Notify
 - Chat Gemini
 - Chat GPT
 - Hỏi thời tiết tất cả các địa danh   v.v.v
@@ -30,9 +27,11 @@ Các chức năng chính:
 - Sau khi biết được địa chỉ IP kết nối Wifi của Raspi -> vào WinSCP trên máy tính (Nếu chưa cài thì vào địa chỉ: https://winscp.net/eng/download.php)  Password truy cập Raspberry:
 - Name: pi
 - pass: raspberry
-Kết nối Rapberry để thấy được Folder: tke_speaker_ai -> Mở -> bạn thấy các file .JSON . các file này dùng để thiết lập thay đổi các chức năng cho tke speaker ai
++ Kết nối Rapberry để thấy được Folder: tke_speaker_ai -> Mở -> bạn thấy các file .JSON . các file này dùng để thiết lập thay đổi các chức năng cho tke speaker ai
 - File : api_key_tke.json là file chứa các api key cho hệ thống
 - clients_info.json -> cấu hình các subscribe/publish MQTT Broker client 
 - setup_wakeup.json -> thay đổi các file picovoice cho lệnh đánh thức tke speaker ai
 - Download mã nguồn cho tke_speaker_ai: git clone https://github.com/tkechatbot/tke_speaker_ai.git
-  
++ Cập nhật chương trình: 30-9-2024-01 
+- Cài thêm thư viện:  sudo python3 -m pip install youtube-search-python
+
